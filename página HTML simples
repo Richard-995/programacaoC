@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8">
+<head>
+<title>Uma Página simples</title>
+</head>
+<body>
+<h1>Bem vindo à minha página simples</h1>
+<p>Esta é uma página HTML simples.</p>
+<p><i>Este texto está em itálico</i></p>
+<p>Este item é <strong>importante</strong></p>
+<p>Podemos modificar o conteudo</p>
+</body>
+</html>
