@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<title>Fontes</title>
+<style>
+@font-face{
+font-family: "playwrite";
+src:url("PlaywriteGBJGuides-Regular.woff2")
+		format("woff2");
+	font-weight: bold;
+	font-style:normal;
+	}
+	#primeiro-container {
+	font-family:playwrite;
+	}
+	@font-face{
+	font-family:"nunito"
+	src:("Nunito-VariableFont_wght.woff2")
+		format("woff2")
+		font-weight:bold;
+		font-style:normal;
+}
+#segundo-container{
+font-family:nunito;
+}
+
+	</style>
+	</head>
+	<body>
+	<h1>Usando 1ª Web Fonte</h1>
+		
+		<p id="primeiro-container">
+		Usando a fonte baixada no web fontes, foi declarada a font-family para este estudo.
+	Acompanhando as aulas da faculdade, foi usada a fonte <strong>"playwrite"</strong> para desenvolver este texto
+	neste formato.</P>
+	
+		<h2>Usando 2ª Web fonte</h2>
+		<p id="segundo-container">
+		Usando outra fonte baixada no web fontes, foi declarada a font-family para este estudo.
+	Acompanhando as aulas da faculdade, foi usada a fonte <strong>"nunito"</strong> para desenvolver este texto
+	neste formato.</p>
+		
+	</body>
+	</html>
