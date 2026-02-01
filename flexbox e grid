@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<title>posicionamento</title>
+<style>
+body{
+	font-size:2rem;
+	}
+#container-flexbox-row div{
+	display:flex;
+	flex-direction:row;
+	}
+#container-flexbox-col div,#container-flexbox-row div{
+	width:100%;
+	height:50px;
+	background-color:green;
+	}
+#container-flexbox-col {
+	display:flex;
+	flex-direction: column;
+	}
+#container-grid{
+	display:grid;
+	grid-template-columns:100px 100px 100px 100px 100px 100px;
+	color:#fff;
+}
+#container-grid div{
+
+	border: 1px solid #000;
+	background:#336666;
+}
+/*posição absoluta- em relação ao elemento anterior*/
+#container-absolute{
+	background-color:rgb(238, 130 238);
+	position:absolute;
+	top:80px;
+	right:0;
+	width:200px;
+	height:300px;
+	border:3px solid #73AD21;
+	background:rgb(106, 90, 205);
+	color:white;
+}
+/*posição estática- posição natural*/
+#container-static{
+	border: 3px solid #73AD21;
+	width: 300px;
+	background:rgb(106, 90, 205);
+}
+/*posição relativa- em relação ao seu posicionamento normal*/
+#container-relative{
+	position: relative;
+	left: 30px;
+	border: 3px  solid #73AD21;
+	width: 300px;
+	background: rgb(106, 90, 205);
+}
+/*posição fix- em relação à viewport*/
+#container-fixed{
+	position: fixed;
+	bottom:0;
+	right:0;
+	border: 3px  solid #73AD21;
+	background: orange;
+}
+#container-static div, #container-relative div, #container-fixed div{
+color:#fff;
+
+</style>
+</head>
+<body>
+<h1>Flexbox row</h1>
+<div id="container=flexbox-row">
+	<div>flexbox1</div>
+	<div>flexbox2</div>
+	<div>flexbox3</div>
+</div>
+	
+<h2>flexbox col</h2>
+<div id="container-flexbox-col">
+	<div>flexbox1</div>
+	<div>flexbox2</div>
+	<div>flexbox3</div>
+</div>
+
+	
+<h3>Grid</h3>
+<div id="container-grid">
+	<div>col1</div>
+	<div>col2</div>
+	<div>col3</div>
+	<div>col4</div>
+	<div>col5</div>
+	<div>col6</div>
+</div>
+	
+<h4>Posição absoluta</h4>
+<div id="container-absolute">
+	<div>
+		Absolute: posicionado em relação ao elemento
+		anterior ou, na ausência desse, em relação à
+		tag body.
+	</div>
+</div>
+<h5>Posição estática</h5>
+	<div id="container-static">
+		<div>Static: Posicionamento natural do elemento</div>
+</div>
+<h6>Posição relativa</h6>
+	<div id="container-relative">
+		<div>Relative: posicionado em relação à sua 
+		posição natural (static).</div>
+	</div>
+<h7>Posição Fixa</h7>
+	<div id="container-fixed">
+		<div>Fixed: posicionado de forma fix em relação à viewport</div>
+	</div>
+</body>
+</html>
