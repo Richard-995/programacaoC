@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX_TERRITORIOS 05
+#define TAM_STRING 50
+ 
+// definição da estrutura(struct)
+struct Territorio {
+    char nome[TAM_STRING];
+    char cor[TAM_STRING];
+    int tropas;
+};
+
+//--função para limpar o buffer de entrada---
+
+void limparBufferEntrada() {
+int c;
+while ((c = getchar()) != '\n'&& c !=EOF);
+}
+
+int main() {
+    struct Territorio terras[MAX_TERRITORIOS];
+    int totalterritorios=0;
+    int i = 0; (i < totalterritorios,i++);
+
+while (totalterritorios<MAX_TERRITORIOS) {
+    printf("----Cadastrando Territorio %i---\n",i++);
+    printf("Nome do Território:");
+    fgets(terras[totalterritorios].nome,TAM_STRING,stdin);
+    printf("Cor do exército:");
+    fgets(terras[totalterritorios].cor,TAM_STRING,stdin);
+    printf("Numero de Tropas:");
+    scanf("%d",&terras[totalterritorios].tropas);
+    limparBufferEntrada(); //  limpa o \n deixado pelo scanf.
+
+
+            terras[totalterritorios].nome[strcspn(terras[totalterritorios].nome, "\n")] ='\0';
+            terras[totalterritorios].cor[strcspn(terras[totalterritorios].cor, "\n")] ='\0';
+            
+        totalterritorios++;
+}
+
+        if  (totalterritorios =MAX_TERRITORIOS)
+        printf("\ncadastro inicial concluido com sucesso!\n\n");
+        printf("============================\n");
+        printf("Mapa do mundo-Estado atual\n");
+        printf("============================\n\n");
+
+for (int i = 0; i < totalterritorios; i++) {
+                printf("---------------------------\n");
+                printf("Território %d\n", i + 1);
+                printf("nome: %s\n",terras[i].nome);
+                printf("Dominado por Exército: %s\n", terras[i].cor);
+                printf("Tropas %d\n", terras[i].tropas);
+                }
+                printf("------------------------------\n");
+
+        return 0;
+}
